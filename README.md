@@ -1,5 +1,14 @@
+# Installation
+Clone this project and give the images writing rights (chmod 777).
+
+Change the value of ``$iptc->predefined_message`` to your secret C&C message.
+
+After that upload ``test.jpg`` to facebook, and change the value of ``$facebook_image`` to your absolute facebook image url.
+
+And now you will get your secret C&C message back.
+
 # Problem
-Facebook and the problem with iptc is that you can fill in 3 iptc fields. So you can use facebook as an valid C&C server. I have some more good news the image hosts below have the same problem:
+Facebook and the problem with iptc is that you can fill in 2 iptc headers. So you can use facebook as an valid C&C server. I have some more good news the image hosts below have the same problem:
 * http://postimage.org/ - all iptc
 * https://facebook.com/ - 2 iptc
 * https://dumpyourphoto.com/ - all iptc
