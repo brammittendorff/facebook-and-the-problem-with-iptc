@@ -43,4 +43,4 @@ private $iptc_header_array = array(
 ```
 
 # Solution
-The solution is to strip all tags like exif and iptc. So that you are only left with the needed values and there is no way to insert code into an image.
+The solution is to strip all tags like exif and iptc. So that you are only left with the needed values and there is no way to insert code or comments into an image.
