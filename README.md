@@ -5,7 +5,8 @@ Change the value of ``$iptc->predefined_message`` to your secret C&C message.
 
 After that upload ``test.jpg`` to facebook, and change the value of ``$facebook_image`` to your absolute facebook image url.
 
-And now you will get your secret C&C message back.
+And now you will get your secret C&C message back:
+![Result of script](https://raw.githubusercontent.com/brammittendorff/facebook-and-the-problem-with-iptc/master/result.png)
 
 # Problem
 Facebook and the problem with iptc is that you can fill in 2 iptc headers. So you can use facebook as an valid C&C server. I have some more good news the image hosts below have the same problem:
