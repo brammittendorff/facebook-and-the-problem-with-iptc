@@ -88,6 +88,7 @@ class iptc {
         if(number_format($percentage, 0) > 90) {
           $iptc_tag = str_replace($this->predefined_message, "", $response);
           echo "2#".$iptc_tag." - ".$this->iptc_header_array["2#".$iptc_tag]." - with response: $response<br />\n";
+          echo "Text: " . base64_decode(str_replace($iptc_tag, "", $response)) . "<br />\n";
         }
       }
     }
@@ -110,7 +111,7 @@ echo "<b>Hidden message in image ($total_message characters): </b><br />\n" . ba
 // https://dumpyourphoto.com/ - all iptc - https://static.dyp.im/74tv3aXEXk/26e14cc863fb4e2ff9b2e63afb809f39.jpg
 // http://imgup.net/ - all iptc - http://h50.imgup.net/testa9a7.jpg
 
-$facebook_image = "https://scontent-ams2-1.xx.fbcdn.net/hphotos-xtp1/t31.0-8/12138350_931569530270898_7157633721123481689_o.jpg";
+$facebook_image = "https://scontent-ams2-1.xx.fbcdn.net/hphotos-xat1/t31.0-8/12068469_932209523540232_140332007141850262_o.jpg";
 echo "<b>My base64 string: </b><br />\n" . $iptc->predefined_message . "<br />\n";
 $iptc->create_iptc("original.jpg", "test.jpg", $iptc->predefined_message);
 $iptc->read_iptc($facebook_image);
