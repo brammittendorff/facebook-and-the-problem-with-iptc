@@ -73,7 +73,7 @@ class iptc {
   public function read_iptc($image)
   {
     // download and just read if the image has a base64 encoded string
-    echo "<b>Reading image: </b><br />\n" . $image . "<br />\n";
+    echo "<b>Serving image url for results: </b><br />\n" . $image . "<br />\n";
     $this->local_file = "facebook.jpg";
     $this->local_file_contents = file_get_contents($image);
     file_put_contents($this->local_file , $this->local_file_contents);
